@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap');
+
+:root {
+    --body-font: 'Rubik', sans-serif;
+    --title-font: 'Secular One', sans-serif;
+    --bg-color: #000;
+    --font-color: #FFF;
+    --border-selected: #D9D9D9;
+}
+
+  /* RESET */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+
+  /* Principal */
+
+body{
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+main::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-233deg, var(--bg-color) 40%, rgba(0, 0, 0,0) 65%) no-repeat;
+}
+
+  /* Personagem */
+
+main .personagem{
+    display: none;
+    height: 100vh;
+}
+
+main .personagem.selecionado {
+    display: block;
+}
+
+main .personagem .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  /* Conteudo */
+
+.conteudo {
+    position: absolute;
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 380px;
+    z-index: 1;
+}
+
+.conteudo .nome-personagem {
+    color: var(--font-color);
+    font-size: 48px;
+    font-family: var(--title-font);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.conteudo .descricao {
+    color: var(--font-color);
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.conteudo .logo {
+    background-image: url('../img/one-piece-logo.png');
+    background-size: cover;
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
+
+
+  /* Botões */
+
+.botoes{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(0, 0, 0,0.3);
+}
+
+.botoes .botao {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.botoes .botao img {
+    border-radius: 50%;
+}
+
+.botoes .botao.selecionado {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px var(--border-selected);
+    cursor: pointer;
+    border-radius: 50%;
+}
+
