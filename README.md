@@ -1,6 +1,6 @@
 # Dev Em Dobro - Projeto One Piece
 
-![Capa](url-da-imagem)
+![Capa](capa.png)
 
 ## 💡 Descrição
 
@@ -16,14 +16,11 @@ Projeto desenvolvido com base no mini curso do canal Dev em Dobro.
 
 ## 📸 Demonstração
 
-[Link para o site publicado no GitHub Pages ou Vercel]
+[Demonstração](https://frraphael.github.io/onepiece/)
 
 ## 🔧 Como rodar localmente
 
 ```bash
-git clone https://github.com/seunome/nome-do-repo
-cd nome-do-repo
-# se tiver npm ou yarn
-npm install
-npm start
+git clone https://github.com/frraphael/onepiece.git
+cd onepiece
 ```
